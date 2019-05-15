@@ -1,0 +1,8 @@
+[build]
+command = """
+cp app/config/secrets_template.yml app/config/secrets.yml
+php runner.php phpsw:generate-website
+yarn prod
+"""
+publish = "web"
+environment = { PHP_VERSION = "7.2", YARN_VERSION = "1.13.0" }
