@@ -12,22 +12,23 @@ mix.disableNotifications()
     .options({
         processCssUrls: false
     })
-    .webpackConfig({
-        plugins: [
-            new PurgecssPlugin({
-                paths: glob.sync([
-                    path.join(__dirname, "app/resources/views/**/*.twig")
-                ]),
-                extractors: [
-                    {
-                        extractor: class {
-                            static extract(content) {
-                                return content.match(/[A-z0-9-:\/]+/g)
-                            }
-                        },
-                        extensions: ["twig"]
-                    }
-                ]
-            })
-        ]
-    });
+    // .webpackConfig({
+    //     plugins: [
+    //         new PurgecssPlugin({
+    //             paths: glob.sync([
+    //                 path.join(__dirname, "app/resources/views/**/*.twig")
+    //             ]),
+    //             extractors: [
+    //                 {
+    //                     extractor: class {
+    //                         static extract(content) {
+    //                             return content.match(/[A-z0-9-:\/]+/g)
+    //                         }
+    //                     },
+    //                     extensions: ["twig"]
+    //                 }
+    //             ]
+    //         })
+    //     ]
+    // });
+
