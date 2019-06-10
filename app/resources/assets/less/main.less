@@ -4,7 +4,6 @@
 
 @import "base/base.less";
 
-
 h1 {
     @apply text-4xl;
 }
@@ -20,6 +19,8 @@ h1, h2, h3 {
 ul {
     @apply list-disc pl-5;
 }
+
+@tailwind components;
 
 @import 'components/balloons';
 @import 'components/hero';
@@ -38,7 +39,6 @@ ul {
     word-wrap: normal;
 }
 
-@tailwind components;
 @tailwind utilities;
 
 // TODO: Move into a Tailwind plugin.
