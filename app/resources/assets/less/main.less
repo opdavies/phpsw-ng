@@ -4,13 +4,26 @@
 
 @import "base/base.less";
 
-@import 'components/balloons';
-@import 'components/hero';
-@import 'components/links';
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-2xl;
+}
 
 h1, h2, h3 {
     @apply .font-medium;
 }
+
+ul {
+    @apply list-disc pl-5;
+}
+
+@import 'components/balloons';
+@import 'components/hero';
+@import 'components/links';
 
 .title {
     @apply .border-b .border-grey-lighter .pb-4 .mb-8 .font-medium;
