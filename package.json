@@ -6,6 +6,8 @@
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "2.0.1",
     "cross-env": "^5.1.5",
     "font-awesome": "^4.7.0",
     "glob-all": "^3.1.0",
