@@ -50,9 +50,9 @@ module.exports = {
         circle: '0 0 10px #ccc'
       },
       screens: {
-        'sm': '576px',
-        'lg': '992px',
-        'xl': '1200px'
+        sm: '576px',
+        lg: '992px',
+        xl: '1200px'
       },
       width: {
         '1/7': '14.285%',
