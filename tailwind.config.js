@@ -27,6 +27,24 @@ module.exports = {
       'red': '#e3342f',
       'red-light': '#d9534f',
     },
+    fontFamily: {
+      'sans': [
+        'Helvetica Neue',
+        'sans-serif'
+      ],
+      'serif': [
+        'Constantia',
+        'Lucida Bright',
+        'Lucidabright',
+        'Lucida Serif',
+        'Lucida',
+        'DejaVu Serif',
+        'Bitstream Vera Serif',
+        'Liberation Serif',
+        'Georgia',
+        'serif'
+      ]
+    },
     extend: {
       screens: {
         'sm': '576px',
