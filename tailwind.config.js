@@ -28,6 +28,11 @@ module.exports = {
       'red-light': '#d9534f',
     },
     extend: {
+      screens: {
+        'sm': '576px',
+        'lg': '992px',
+        'xl': '1200px'
+      },
     }
   },
   variants: {},
