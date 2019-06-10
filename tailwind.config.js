@@ -46,6 +46,9 @@ module.exports = {
       ]
     },
     extend: {
+      boxShadow: {
+        circle: '0 0 10px #ccc'
+      },
       screens: {
         'sm': '576px',
         'lg': '992px',
