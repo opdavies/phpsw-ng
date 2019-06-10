@@ -37,6 +37,8 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    require('tailwindcss-list-reset')(),
+
     require('tailwindcss-transition')({
       standard: 'all .3s ease',
       transitions: {
