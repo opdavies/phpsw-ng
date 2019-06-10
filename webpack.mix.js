@@ -1,8 +1,8 @@
-let mix = require('laravel-mix');
-let glob = require("glob-all");
-let PurgecssPlugin = require("purgecss-webpack-plugin");
+let mix = require('laravel-mix')
+let glob = require('glob-all')
+let PurgecssPlugin = require('purgecss-webpack-plugin')
 
-require('laravel-mix-tailwind');
+require('laravel-mix-tailwind')
 
 mix.disableNotifications()
     .less('app/resources/assets/less/main.less', 'web/build/css/site.css')
@@ -12,25 +12,6 @@ mix.disableNotifications()
     .options({
         processCssUrls: false
     })
-    // .webpackConfig({
-    //     plugins: [
-    //         new PurgecssPlugin({
-    //             paths: glob.sync([
-    //                 path.join(__dirname, "app/resources/views/**/*.twig")
-    //             ]),
-    //             extractors: [
-    //                 {
-    //                     extractor: class {
-    //                         static extract(content) {
-    //                             return content.match(/[A-z0-9-:\/]+/g)
-    //                         }
-    //                     },
-    //                     extensions: ["twig"]
-    //                 }
-    //             ]
-    //         })
-    //     ]
-    // });
 
 mix.browserSync({
     proxy: '127.0.0.1:8000',
